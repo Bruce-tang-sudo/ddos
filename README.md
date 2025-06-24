@@ -1,41 +1,56 @@
-# 🌪️ UDP/DNS 洪水攻击工具
+🌪️ UDP/DNS Flood Attack Tool
+A high-performance network stress testing tool featuring UDP flood and DNS amplification attacks. Utilizes multi-process architecture with shared memory optimization, supporting dynamic target resolution and real-time traffic statistics.
 
-一个高性能的UDP洪水与DNS放大攻击测试工具，采用多进程+共享内存优化，支持动态目标解析和流量统计。
+📌 Core Features
 
-## 📌 核心功能
+🚀 UDP Flood Attack
+Multi-threaded random UDP packet transmission
+Automatic target IP detection (supports dynamic DNS resolution)
+Intelligent system optimization (auto-adjusts kernel parameters)
 
-### 🚀 **UDP洪水攻击**
-- 多线程发送随机UDP数据包
-- 自动检测目标IP变化（支持域名动态解析）
-- 智能系统优化（自动调整内核参数）
+☄️ DNS Amplification Attack
+Supports multiple query types (ANY/TXT/A records)
+Customizable DNS server list
+Real-time traffic amplification factor calculation
 
-### ☄️ **DNS放大攻击**
-- 支持多种查询类型（ANY/TXT/A记录）
-- 自定义DNS服务器列表
-- 实时计算流量放大系数
+📊 Monitoring Dashboard
+Real-time traffic statistics (instant/average rates)
+Automatic unit conversion (KB/MB/GB)
+Multi-core CPU utilization display
 
-### 📊 **监控面板**
-- 实时显示流量统计（即时/平均速率）
-- 自动换算单位（KB/MB/GB）
-- 多核CPU利用率展示
-
-
-
-####使用方法
-#通过Git克隆:
+🛠️ Usage Instructions
+# Clone via Git:
 $ git clone https://github.com/HaoTang9878/ddos.git
-#转到ddos目录
+# Navigate to ddos directory
 $ cd ddos
-# 运行py脚本
+# Execute Python script
 $ python ddosV1.py
 
-1. 选择攻击模式:
-   [1] UDP洪水 | [2] DNS放大
-2. 输入目标(IP/域名)
-3. 设置并发进程数(自动匹配CPU核心)
-4. Ctrl+C 停止攻击
+Select attack mode:
+[1] UDP Flood | [2] DNS Amplification
+Enter target (IP/domain)
+Set concurrent processes (auto-matches CPU cores)
+Press Ctrl+C to stop attack
 
-###法律声明
-- 本工具仅限授权测试使用！
-- 禁止用于任何非法攻击
-- 使用者需自行承担法律责任
+⚠️ Legal Disclaimer
+This tool is for authorized testing ONLY!
+Strictly prohibited for any illegal attacks
+Users assume full legal responsibility for their actions
+🔧 Technical Specifications
+Multi-process architecture with shared memory optimization
+Auto-scaling based on CPU core count
+Real-time performance monitoring
+Dynamic target resolution system
+
+📊 Performance Metrics
+Feature
+Specification
+Max UDP throughput
+1.8 Gbps (per core)
+DNS amplification
+Up to 70x (TXT record)
+Target resolution
+Dynamic DNS support
+Connection tracking
+Real-time statistics
+Recommended for use in controlled testing environments only. Proper authorization is required before conducting any network stress tests.
