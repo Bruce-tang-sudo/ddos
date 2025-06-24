@@ -31,7 +31,7 @@ def print_banner():
     print(">>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<")
     print("\n/---------------------------------------------------\\")
     print("|   作者          : Tanghao                       |")
-    print("|   GitHub     : https://github.com/Bruce-tang-sudo     |")
+    print("|   GitHub     : https://github.com/HaoTang9878     |")
     print("|   版本          : V0.1.0                        |")
     print("|   QQ交群    : 1032304553    |")
     print("\\---------------------------------------------------/")
