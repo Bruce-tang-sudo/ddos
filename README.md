@@ -23,17 +23,27 @@ A high-performance network stress testing tool featuring UDP flood and DNS ampli
 - Automatic unit conversion (KB/MB/GB)
 - Multi-core CPU utilization display
 
-## 🛠️ Installation & Usage
+## How to use
 
-```bash
-# Clone repository
-git clone https://github.com/HaoTang9878/ddos.git
-cd ddos
+- Download the script:
 
-# Run the tool
-python ddosV1.py
+```
+$ git clone https://github.com/HaoTang9878/ddos.git
+```
 
-Interactive Menu:
+- cd :
+
+```
+$ cd ddos
+```
+
+- Run it:
+
+```
+$ python ddos_V1.py
+```
+
+## Interactive Menu:
 
 Select attack mode:
 [1] UDP Flood
@@ -41,7 +51,7 @@ Select attack mode:
 Enter target (IP/domain)
 Set concurrent processes (auto-matches CPU cores)
 Press Ctrl+C to stop attack
-⚠️ Legal Disclaimer
+## ⚠️ Legal Disclaimer
 :warning: This tool is for authorized testing ONLY! 
 
 Strictly prohibited for any illegal attacks
@@ -58,7 +68,7 @@ Target Resolution
 Dynamic DNS support
 Connection Tracking
 Real-time statistics
-📊 Performance Metrics
+## 📊 Performance Metrics
 Metric
 Value
 Max UDP throughput
@@ -69,7 +79,7 @@ Minimum Requirements
 2-core CPU, 1GB RAM
 Recommended Setup
 4-core CPU, 4GB RAM, 10G NIC
-📝 Notes
+## 📝 Notes
 Tested on Ubuntu 20.04+/CentOS 7+
 Requires root privileges for kernel optimization
 Cloud providers may throttle attack traffic
