@@ -19,16 +19,16 @@
 - 自动换算单位（KB/MB/GB）
 - 多核CPU利用率展示
 
-## 🛠️ 技术亮点
-```python
-# 采用共享内存实现进程间通信
-stats_shm = shared_memory.SharedMemory(create=True, size=8)
-memoryview(stats_shm.buf).cast('Q')[0] = 0  # 原子计数器
 
-# 使用libc原生sendto提升发包性能
-self.libc.sendto(sock.fileno(), payload, len(payload), 0, sockaddr, addrlen)
 
 ####使用方法
+#通过Git克隆:
+$ git clone https://github.com/HaoTang9878/ddos.git
+#转到ddos目录
+$ cd ddos
+# 运行py脚本
+$ python ddosV1.py
+
 1. 选择攻击模式:
    [1] UDP洪水 | [2] DNS放大
 2. 输入目标(IP/域名)
